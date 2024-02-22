@@ -1,0 +1,11 @@
+{
+    "monster": [
+        {   "id": 1,
+            "name": "Pikachu",
+            "series": "Pokemon",
+            "origin": "Japan",
+            "risk factor": "✰✰★★★",
+            "rarity": "Very Common"
+        }
+    ]
+}
