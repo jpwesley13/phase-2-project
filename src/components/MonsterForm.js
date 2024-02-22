@@ -80,10 +80,19 @@ function MonsterForm({onAddMonster}) {
                     <option value="★★★★✰">★★★★✰</option>
                     <option value="★★★★★">★★★★★</option>
                 </select>
-                <input label="Rarity" placeholder="Rarity" name="rarity"
+                <select name="rarity"
                 value={formData.rarity}
                 onChange={handleChange}
-                />
+                >
+                    <option value="" disabled selected>Rarity</option>
+                    <option value="Only one">Only One</option>
+                    <option value="Very rare">Very Rare</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Uncommon">Uncommon</option>
+                    <option value="Common">Common</option>
+                    <option value="Very Common">Very Common</option>
+                    <option value="Everywhere">Everywhere</option>
+                </select>
                 <input label="Image url" placeholder="Image url for sighting" name="image"
                 value={formData.image}
                 onChange={handleChange}
