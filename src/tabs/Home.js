@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-//import MonsterCard from "../components/MonsterCard";
 import NavBar from "../components/NavBar";
 import MonsterCard from "../components/MonsterCard";
 //import MonsterForm from "../components/MonsterForm";
@@ -23,6 +22,7 @@ function Home() {
             <MonsterCard 
             key={monster.id}
             monster={monster}
+            id={monster.id}
             />
           ))}
         </>

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
-function MonsterCard({monster}) {
+function MonsterCard({monster, id}) {
     return (
         <div className="card">
             <h2>{monster.name}</h2>
@@ -9,6 +10,7 @@ function MonsterCard({monster}) {
               alt={monster.name}
               className="monster-card"  
             />
+            <Link to={`/monster/${id}`}>Details</Link>
         </div>
     );
 };
