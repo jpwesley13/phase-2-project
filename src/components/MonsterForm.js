@@ -43,7 +43,7 @@ function MonsterForm({onAddMonster}) {
 
     return (
         <div>
-            <h3>Add monster sighting!</h3>
+            <h3>Add New Monster Sighting!</h3>
             <form
             onSubmit={handleSubmit}>
                 <input label="Name" placeholder="Name" name="name"
