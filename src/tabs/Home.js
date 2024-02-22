@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import MonsterCard from "../components/MonsterCard";
+//import MonsterCard from "../components/MonsterCard";
 import NavBar from "../components/NavBar";
-import MonsterForm from "../components/MonsterForm";
+//import MonsterForm from "../components/MonsterForm";
 
 function Home() {
     return (
