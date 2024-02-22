@@ -19,7 +19,9 @@ function MonsterForm({onAddMonster}) {
         });
     };
 
-    function handleSubmit(){
+    function handleSubmit(e){
+        e.preventDefault()
+
         const monsterData = {
             name: formData.name,
             series: formData.series,
@@ -56,6 +58,7 @@ function MonsterForm({onAddMonster}) {
                 value={formData.origin}
                 onChange={handleChange}
                 name="origin">
+                    <option value="" disabled selected>Location</option>
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
                     <option value="Western Eurasia">Western Eurasia</option>
@@ -65,10 +68,18 @@ function MonsterForm({onAddMonster}) {
                     <option value="Poles">Poles</option>
                     <option value="Cyberspace">Cyberspace</option>
                 </select>
-                <input label="Risk Factor" placeholder="Risk Factor" name="risk"
+                <select
+                name="risk"
                 value={formData.risk}
-                onChange={handleChange}
-                />
+                onChange={handleChange}>
+                    <option value="" disabled selected>Risk Factor</option>
+                    <option value="✰✰✰✰✰">✰✰✰✰✰</option>
+                    <option value="★✰✰✰✰">★✰✰✰✰</option>
+                    <option value="★★✰✰✰">★★✰✰✰</option>
+                    <option value="★★★✰✰">★★★✰✰</option>
+                    <option value="★★★★✰">★★★★✰</option>
+                    <option value="★★★★★">★★★★★</option>
+                </select>
                 <input label="Rarity" placeholder="Rarity" name="rarity"
                 value={formData.rarity}
                 onChange={handleChange}
