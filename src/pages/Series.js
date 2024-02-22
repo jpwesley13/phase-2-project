@@ -3,11 +3,18 @@ import NavBar from "../components/NavBar";
 
 function Series() {
 
-    // const [series, setSeries] = useState([]);
+    const [series, setSeries] = useState([]);
 
-    // useEffect(() ={
-    //     fetch
-    // })
+    useEffect(() => {
+        fetch(`http://127.0.0.1:3000/monster`)
+        .then(res => res.json())
+        .then(data => {
+            const uniqueSeries = Array.from(new Set(data.map(monster => monster.series)));
+            setSeries(uniqueSeries)
+        })
+    }, [])
+
+    console.log(series)
 
     return (
         <>
