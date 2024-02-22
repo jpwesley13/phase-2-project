@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Pikachu",
       "series": "Pokemon",
-      "origin": "Japan",
+      "origin": "East Asia",
       "risk": "★★★✰✰",
       "rarity": "Very Common",
       "image": "https://static.wikia.nocookie.net/thepokemonshow/images/8/80/20101007155439%21Ash_Pikachu.png"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Flabebe",
       "series": "Pokemon",
-      "origin": "Japan",
+      "origin": "East Asia",
       "risk": "✰✰✰✰✰",
       "rarity": "Uncommon",
       "image": "https://dotesports.com/wp-content/uploads/2022/11/17070542/Flabebe.png?w=1200"
@@ -30,7 +30,7 @@
     {
       "name": "His Throne",
       "series": "Local 58",
-      "origin": "option8",
+      "origin": "Cyberspace",
       "risk": "★★★★★",
       "rarity": "Only one",
       "image": "https://static.wikia.nocookie.net/local58/images/f/fe/Screen_Shot_2019-11-06_at_11.39.59_PM.png",
