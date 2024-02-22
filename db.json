@@ -28,25 +28,21 @@
     "series": [
         {
             "id": 1,
-            "title": "Pokemon",
-            "monsters": ["Pikachu", "Flabebe"]
+            "title": "Pokemon"
         },
         {
             "id": 2,
-            "title": "Gemini Home Entertainment",
-            "monsters": ["Woodcrawler"]
+            "title": "Gemini Home Entertainment"
         }
       ],
     "origin": [
         {
             "id": 1,
-            "location": "Japan",
-            "monsters": ["Pikachu", "Flabebe"]
+            "location": "Japan"
         },
         {
             "id": 2,
-            "location": "Canada",
-            "monsters": ["Woodcrawler"]
+            "location": "Canada"
         }
       ]
 }

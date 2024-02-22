@@ -8,8 +8,9 @@ function Monster() {
     const monsterId = params.id;
 
     useEffect(() => {
-        fetch(`http://localhost:4000/movies/${monsterId}`)
+        fetch(`http://localhost:3000/monster/${monsterId}`)
         .then(res => res.json())
+        .then(console.log(monsterId))
         .then(setMonster)
         .catch(error => console.error(error));
       }, [monsterId])
@@ -25,8 +26,9 @@ function Monster() {
         </header>
         <main>
             <h1>{monster.name}</h1>
-            <span>Series: {monster.series} | Location: {monster.origin}</span>
+            <span>Series: {monster.series} | First sighting: {monster.origin}</span>
             <h2>Risk to humans: {monster.risk}</h2>
+            <h3>Rarity: {monster.rarity}</h3>
         </main>
     </>
     );
