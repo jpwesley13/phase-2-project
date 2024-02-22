@@ -6,6 +6,44 @@
             "origin": "Japan",
             "risk factor": "✰✰★★★",
             "rarity": "Very Common"
+        },
+        {   "id": 2,
+            "name": "Woodcrawler",
+            "series": "Gemini Home Entertainment",
+            "origin": "North America",
+            "risk factor": "★★★★★",
+            "rarity": "Everywhere"
+        },
+        {   "id": 3,
+            "name": "Flabebe",
+            "series": "Pokemon",
+            "origin": "Japan",
+            "risk factor": "✰✰✰✰✰",
+            "rarity": "Uncommon"
         }
-    ]
+      ],
+    "series": [
+        {
+            "id": 1,
+            "title": "Pokemon",
+            "monsters": ["Pikachu", "Flabebe"]
+        },
+        {
+            "id": 2,
+            "title": "Gemini Home Entertainment",
+            "monsters": ["Woodcrawler"]
+        }
+      ],
+    "origin": [
+        {
+            "id": 1,
+            "location": "Japan",
+            "monsters": ["Pikachu", "Flabebe"]
+        },
+        {
+            "id": 2,
+            "location": "Canada",
+            "monsters": ["Woodcrawler"]
+        }
+      ]
 }
