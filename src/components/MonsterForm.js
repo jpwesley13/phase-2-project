@@ -9,7 +9,6 @@ function MonsterForm({onAddMonster}) {
         rarity: "",
         image: "",
     });
-    // const [option, setOption] = useState("The Mind")
 
     function handleChange(e){
         const {name, value} = e.target
@@ -57,14 +56,14 @@ function MonsterForm({onAddMonster}) {
                 value={formData.origin}
                 onChange={handleChange}
                 name="origin">
-                    <option value="option1">North America</option>
-                    <option value="option2">South America</option>
-                    <option value="option3">Western Eurasia</option>
-                    <option value="option4">East Asia</option>
-                    <option value="option5">Africa</option>
-                    <option value="option6">Oceania</option>
-                    <option value="option7">Poles</option>
-                    <option value="option8">Cyberspace</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Western Eurasia">Western Eurasia</option>
+                    <option value="East Asia">East Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="Poles">Poles</option>
+                    <option value="Cyberspace">Cyberspace</option>
                 </select>
                 <input label="Risk Factor" placeholder="Risk Factor" name="risk"
                 value={formData.risk}
@@ -82,4 +81,6 @@ function MonsterForm({onAddMonster}) {
             </form>
         </div>
     )
-}
+};
+
+export default MonsterForm;
