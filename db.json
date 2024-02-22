@@ -35,6 +35,15 @@
       "rarity": "Only one",
       "image": "https://static.wikia.nocookie.net/local58/images/f/fe/Screen_Shot_2019-11-06_at_11.39.59_PM.png",
       "id": 4
+    },
+    {
+      "name": "Count Orlok",
+      "series": "Nosferatu",
+      "origin": "Western Eurasia",
+      "risk": "★★★✰✰",
+      "rarity": "Only one",
+      "image": "https://rosenbach.org/wp-content/uploads/2017/12/nosferatu-bite.jpg",
+      "id": 5
     }
   ],
   "series": [
