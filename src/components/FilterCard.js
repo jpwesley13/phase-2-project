@@ -1,5 +1,5 @@
 function FilterCard({ unique, monsters }) {
-  const monsterList = monsters.map((monster) => (
+  const monsterList = monsters.map(monster => (
     <li key={monster.id}>{monster.name}</li>
   ));
 
