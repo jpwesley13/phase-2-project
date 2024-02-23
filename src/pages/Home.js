@@ -12,6 +12,7 @@ function Home() {
 
     return (
         <>
+          <Outlet context={{monsters}}/>
           <MonsterForm
           onAddMonster={onAddMonster}/>
           {monsters.map(monster => (

@@ -1,20 +1,23 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+// import { useEffect, useState } from "react";
+import { useParams, useOutletContext } from "react-router-dom";
 
 function Monster() {
-    const [monster, setMonster] = useState([]);
+    // const [monster, setMonster] = useState([]);
     const params = useParams();
-    const monsterId = params.id;
+    // const monsterId = params.id;
+    const {monsters} = useOutletContext();
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/monster/${monsterId}`)
-        .then(res => res.json())
-        .then(console.log(monsterId))
-        .then(setMonster)
-        .catch(error => console.error(error));
-      }, [monsterId])
+    const monster = monsters.find(monster => monster.id === parseInt(params.id));
 
-      if(!monster.name){
+    // useEffect(() => {
+    //     fetch(`http://localhost:3000/monster/${monsterId}`)
+    //     .then(res => res.json())
+    //     .then(console.log(monsterId))
+    //     .then(setMonster)
+    //     .catch(error => console.error(error));
+    //   }, [monsterId])
+
+      if(!monster){
         return <h1>Hunting...</h1>
       };
 
