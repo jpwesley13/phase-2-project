@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
 import MonsterCard from "../components/MonsterCard";
 import MonsterForm from "../components/MonsterForm";
 
@@ -19,9 +18,6 @@ function Home() {
 
     return (
         <>
-          <header>
-            <NavBar />
-          </header>
           <MonsterForm
           onAddMonster={onAddMonster}/>
           {monsters.map(monster => (

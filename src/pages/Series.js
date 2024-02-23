@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import NavBar from "../components/NavBar";
 import FilterCard from "../components/FilterCard";
 
 function Series() {
@@ -37,9 +36,6 @@ function Series() {
 
     return (
         <>
-        <header>
-            <NavBar />
-        </header>
         <main>
         <select value={filteredSeries} onChange={(e) => setFilteredSeries(e.target.value)}>
         <option disabled value="">Choose Series</option>

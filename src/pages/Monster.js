@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import NavBar from "../components/NavBar";
 
 function Monster() {
     const [monster, setMonster] = useState([]);
@@ -21,9 +20,6 @@ function Monster() {
 
     return (
     <>
-        <header>
-            <NavBar />
-        </header>
         <main>
             <h1>{monster.name}</h1>
             <span>Series: {monster.series} | First sighting: {monster.origin}</span>

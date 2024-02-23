@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "./components/NavBar";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -23,4 +23,4 @@ function App() {
     );
 };
 
-export default App
+export default App;

@@ -1,3 +1,4 @@
+import App from "./App";
 import Home from "./pages/Home";
 import Monster from "./pages/Monster";
 import Series from "./pages/Series";
@@ -7,23 +8,26 @@ import ErrorPage from "./pages/ErrorPage";
 const routes = [
     {
         path: "/",
-        element: <Home />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/monster/:id",
-        element: <Monster />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/series",
-        element: <Series />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/travel",
-        element: <Travel />,
-        errorElement: <ErrorPage />
+        element: <App />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "/",
+                element: <Home />,
+            },
+            {
+                path: "/monster/:id",
+                element: <Monster />,
+            },
+            {
+                path: "/series",
+                element: <Series />,
+            },
+            {
+                path: "/travel",
+                element: <Travel />,
+            }
+        ]
     }
 ];
 
