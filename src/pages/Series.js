@@ -5,7 +5,8 @@ import FilterCard from "../components/FilterCard";
 function Series() {
 
     const [series, setSeries] = useState([]);
-    const [monsters, setMonsters] = useState([])
+    const [monsters, setMonsters] = useState([]);
+    const [filtered, setFiltered] = useState("");
 
     useEffect(() => {
         fetch(`http://127.0.0.1:3000/monster`)
@@ -17,12 +18,22 @@ function Series() {
         })
     }, []);
 
-    console.log(series)
-
-    const seriesList = series.map(production => {
-        const filteredMonsters = monsters.filter(monster => monster.series === production);
-        return <FilterCard key={production} unique={production} monsters={filteredMonsters} />;
-    });
+    const seriesList = filtered && series.includes(filtered) ? (
+        series
+          .filter((production) => production === filtered)
+          .map((production) => {
+            const filteredMonsters = monsters.filter(
+              (monster) => monster.series === production
+            );
+            return (
+              <FilterCard
+                key={production}
+                unique={production}
+                monsters={filteredMonsters}
+              />
+            );
+          })
+      ) : null;
 
     return (
         <>
@@ -30,6 +41,14 @@ function Series() {
             <NavBar />
         </header>
         <main>
+        <select value={filtered} onChange={(e) => setFiltered(e.target.value)}>
+        <option disabled value="">Choose Series</option>
+        {series.map((production) => (
+<       option key={production} value={production}>
+        {production}
+        </option>
+        ))}
+        </select>
             {seriesList}
         </main>
         </>

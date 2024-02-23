@@ -11,4 +11,4 @@ function FilterCard({ unique, monsters }) {
   );
 }
   
-  export default FilterCard
+  export default FilterCard;

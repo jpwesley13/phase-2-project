@@ -4,11 +4,11 @@
     width: 70px;
     padding: 5px;
     margin: 0 6px 6px;
-    background: lightblue;
+    background: rgb(170, 60, 60);
     text-decoration: none;
     text-align: center;
     font-size: min(10vw, 15px) ;
-    color: black;
+    color: rgb(255, 255, 255);
 }
   
 a.active {
