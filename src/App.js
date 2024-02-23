@@ -6,7 +6,8 @@ function App() {
 
     const [monsters, setMonsters] = useState([]);
     const [series, setSeries] = useState([]);
-    const [filteredSeries, setFilteredSeries] = useState("");
+    const [origins, setOrigins] = useState([]);
+
 
     useEffect(() => {
         fetch(`http://127.0.0.1:3000/monster`)
@@ -15,6 +16,8 @@ function App() {
             setMonsters(data);
             const uniqueSeries = Array.from(new Set(data.map(monster => monster.series)));
             setSeries(uniqueSeries);
+            const uniqueOrigins = Array.from(new Set(data.map(monster => monster.origin)));
+            setOrigins(uniqueOrigins);
         })
         .catch(error => console.error(error));
     }, []);
@@ -24,7 +27,7 @@ function App() {
         <header>
             <NavBar />
         </header>
-        <Outlet context={{monsters, setMonsters, series, setSeries, filteredSeries, setFilteredSeries}} />
+        <Outlet context={{monsters, setMonsters, series, origins}} />
         </>
     );
 };
