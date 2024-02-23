@@ -38,7 +38,10 @@ function MonsterForm({onAddMonster}) {
             body: JSON.stringify(monsterData)
         })
         .then(res => res.json())
-        .then(data => onAddMonster(data))
+        .then(data => {
+            onAddMonster(data);
+            setFormData({})
+        });
     };
 
     return (
