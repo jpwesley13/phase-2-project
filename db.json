@@ -45,25 +45,5 @@
       "image": "https://rosenbach.org/wp-content/uploads/2017/12/nosferatu-bite.jpg",
       "id": 5
     }
-  ],
-  "series": [
-    {
-      "id": 1,
-      "title": "Pokemon"
-    },
-    {
-      "id": 2,
-      "title": "Gemini Home Entertainment"
-    }
-  ],
-  "origin": [
-    {
-      "id": 1,
-      "location": "Japan"
-    },
-    {
-      "id": 2,
-      "location": "Canada"
-    }
   ]
 }

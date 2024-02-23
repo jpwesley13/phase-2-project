@@ -1,20 +1,14 @@
-import { useEffect, useState } from "react";
+import { Outlet, useOutletContext } from "react-router-dom";
 import MonsterCard from "../components/MonsterCard";
 import MonsterForm from "../components/MonsterForm";
 
 function Home() {
 
-    const [monsters, setMonsters] = useState([]);
-
-    useEffect(() => {
-        fetch(`http://127.0.0.1:3000/monster`)
-        .then(res => res.json())
-        .then(setMonsters)
-    }, [])
+    const {monsters, setMonsters} = useOutletContext();
 
     function onAddMonster(newMonster){
         return setMonsters([...monsters, newMonster])
-    }
+    };
 
     return (
         <>

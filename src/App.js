@@ -18,7 +18,7 @@ function App() {
         <header>
             <NavBar />
         </header>
-        <Outlet context={monsters} />
+        <Outlet context={{monsters, setMonsters}} />
         </>
     );
 };
