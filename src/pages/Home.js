@@ -1,4 +1,4 @@
-import { Outlet, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import MonsterCard from "../components/MonsterCard";
 import MonsterForm from "../components/MonsterForm";
 
@@ -12,7 +12,6 @@ function Home() {
 
     return (
         <>
-          <Outlet context={{monsters}}/>
           <MonsterForm
           onAddMonster={onAddMonster}/>
           {monsters.map(monster => (

@@ -1,21 +1,10 @@
-// import { useEffect, useState } from "react";
 import { useParams, useOutletContext } from "react-router-dom";
 
 function Monster() {
-    // const [monster, setMonster] = useState([]);
     const params = useParams();
-    // const monsterId = params.id;
     const {monsters} = useOutletContext();
 
     const monster = monsters.find(monster => monster.id === parseInt(params.id));
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:3000/monster/${monsterId}`)
-    //     .then(res => res.json())
-    //     .then(console.log(monsterId))
-    //     .then(setMonster)
-    //     .catch(error => console.error(error));
-    //   }, [monsterId])
 
       if(!monster){
         return <h1>Hunting...</h1>
