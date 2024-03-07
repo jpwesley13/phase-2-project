@@ -5,7 +5,7 @@ function FilterCard({ unique, monsters }) {
 
   return (
     <article>
-      <h2>{unique}</h2>
+      <h2>Monsters sighted in {unique}:</h2>
       <ul>{monsterList}</ul>
     </article>
   );

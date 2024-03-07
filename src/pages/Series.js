@@ -31,6 +31,9 @@ function Series() {
     return (
         <>
         <main>
+          <h2>Find monsters by their first sighted series!</h2>
+          <span>Series with confirmed monster sightings:</span>
+          <br/>
         <select value={filteredSeries} onChange={(e) => setFilteredSeries(e.target.value)}>
         <option disabled value="">Choose Series</option>
         {series.map((production) => (

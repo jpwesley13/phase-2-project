@@ -74,7 +74,8 @@ function MonsterForm() {
                     <option value="East Asia">East Asia</option>
                     <option value="Africa">Africa</option>
                     <option value="Oceania">Oceania</option>
-                    <option value="Poles">Poles</option>
+                    <option value="The Poles">The Poles</option>
+                    <option value="The Deep Sea">The Deep Sea</option>
                     <option value="Space">Space</option>
                     <option value="Cyberspace">Cyberspace</option>
                     <option value="Another World">Another World</option>

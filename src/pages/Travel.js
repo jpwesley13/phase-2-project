@@ -31,6 +31,9 @@ function Travel() {
     return (
         <>
         <main>
+          <h2>Find monsters by their known habitat!</h2>
+          <span>Travel destinations for monster sightings:</span>
+          <br/>
           <select value={filteredOrigins} onChange={(e) => setFilteredOrigins(e.target.value)}>
           <option disabled value="">Choose Destination</option>
         {origins.map((origin) => (
