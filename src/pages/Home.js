@@ -4,17 +4,11 @@ import MonsterForm from "../components/MonsterForm";
 
 function Home() {
 
-    const {monsters, setMonsters} = useOutletContext();
-
-    // function onAddMonster(newMonster){
-    //     return setMonsters([...monsters, newMonster])
-    // };
+    const {monsters} = useOutletContext();
 
     return (
         <>
-          <MonsterForm
-          // onAddMonster={onAddMonster}
-          />
+          <MonsterForm />
           {monsters.map(monster => (
             <MonsterCard 
             key={monster.id}
