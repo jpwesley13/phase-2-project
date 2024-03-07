@@ -27,14 +27,14 @@ function Travel() {
     return (
         <>
         <main>
-        <select value={filteredOrigins} onChange={(e) => setFilteredOrigins(e.target.value)}>
-        <option disabled value="">Choose Destination</option>
+          <select value={filteredOrigins} onChange={(e) => setFilteredOrigins(e.target.value)}>
+          <option disabled value="">Choose Destination</option>
         {origins.map((origin) => (
-<       option key={origin} value={origin}>
+          <option key={origin} value={origin}>
         {origin}
-        </option>
+          </option>
         ))}
-        </select>
+          </select>
             {originsList}
         </main>
         </>

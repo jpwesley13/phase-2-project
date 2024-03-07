@@ -1,6 +1,8 @@
 import React, {useState} from "react";
+import { useOutletContext } from "react-router-dom";
 
-function MonsterForm({onAddMonster}) {
+function MonsterForm() {
+    const {monsters, setMonsters} = useOutletContext();
     const [formData, setFormData] = useState({
         name: "",
         series: "",
@@ -9,6 +11,10 @@ function MonsterForm({onAddMonster}) {
         rarity: "",
         image: "",
     });
+
+    function onAddMonster(newMonster){
+        return setMonsters([...monsters, newMonster])
+    };
 
     function handleChange(e){
         const {name, value} = e.target
@@ -69,7 +75,9 @@ function MonsterForm({onAddMonster}) {
                     <option value="Africa">Africa</option>
                     <option value="Oceania">Oceania</option>
                     <option value="Poles">Poles</option>
+                    <option value="Space">Space</option>
                     <option value="Cyberspace">Cyberspace</option>
+                    <option value="Another World">Another World</option>
                 </select>
                 <select
                 name="risk"

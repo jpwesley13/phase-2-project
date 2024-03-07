@@ -6,14 +6,15 @@ function Home() {
 
     const {monsters, setMonsters} = useOutletContext();
 
-    function onAddMonster(newMonster){
-        return setMonsters([...monsters, newMonster])
-    };
+    // function onAddMonster(newMonster){
+    //     return setMonsters([...monsters, newMonster])
+    // };
 
     return (
         <>
           <MonsterForm
-          onAddMonster={onAddMonster}/>
+          // onAddMonster={onAddMonster}
+          />
           {monsters.map(monster => (
             <MonsterCard 
             key={monster.id}
