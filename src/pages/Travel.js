@@ -1,8 +1,12 @@
 import { useOutletContext } from "react-router-dom";
 import FilterCard from "../components/FilterCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Travel() {
+
+    useEffect(() => {
+      document.title = "Travel"
+    }, [])
 
     const {origins, monsters} = useOutletContext();
     const [filteredOrigins, setFilteredOrigins] = useState("");

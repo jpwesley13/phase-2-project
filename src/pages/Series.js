@@ -1,8 +1,12 @@
 import { useOutletContext } from "react-router-dom";
 import FilterCard from "../components/FilterCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Series() {
+
+    useEffect(() => {
+      document.title = "Series"
+    }, [])
 
     const {series, monsters} = useOutletContext();
     const [filteredSeries, setFilteredSeries] = useState("");

@@ -1,10 +1,15 @@
 import { useParams, useOutletContext } from "react-router-dom";
+import { useEffect } from "react";
 
 function Monster() {
     const params = useParams();
     const {monsters} = useOutletContext();
 
     const monster = monsters.find(monster => monster.id === parseInt(params.id));
+
+    useEffect(() => {
+      document.title = `${monster.name}`
+    }, [])
 
       if(!monster){
         return <h1>Hunting...</h1>
