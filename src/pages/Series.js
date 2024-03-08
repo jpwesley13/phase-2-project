@@ -37,7 +37,7 @@ function Series() {
         <select value={filteredSeries} onChange={(e) => setFilteredSeries(e.target.value)}>
         <option disabled value="">Choose Series</option>
         {series.map((production) => (
-<       option key={production} value={production}>
+        <option key={production} value={production}>
         {production}
         </option>
         ))}

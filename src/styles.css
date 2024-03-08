@@ -21,7 +21,7 @@ code {
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #6e262a;
+  box-shadow: 3px 4px rgb(133, 38, 38);
 }
 
 .monster-card {
@@ -33,10 +33,29 @@ code {
 .header {
   padding: 1rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar > a{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70px;
+  padding: 5px;
+  margin: 6px 6px 6px;
+  background: rgb(170, 60, 60);
+  text-decoration: none;
+  text-align: center;
+  font-size: min(10vw, 15px) ;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+a.active {
+  background: black;
+  color: white;
 }
