@@ -1,6 +1,6 @@
 function FilterCard({ unique, monsters }) {
   const monsterList = monsters.map(monster => (
-    <li key={monster.id}>{monster.name}</li>
+    <li key={monster.id}><strong>{monster.name}</strong>: Risk rating of {monster.risk}</li>
   ));
 
   return (

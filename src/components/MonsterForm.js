@@ -67,7 +67,7 @@ function MonsterForm() {
                 value={formData.origin}
                 onChange={handleChange}
                 name="origin">
-                    <option value="" disabled selected>Location</option>
+                    <option value="" disabled>Location</option>
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
                     <option value="Western Eurasia">Western Eurasia</option>
@@ -84,7 +84,7 @@ function MonsterForm() {
                 name="risk"
                 value={formData.risk}
                 onChange={handleChange}>
-                    <option value="" disabled selected>Risk Factor</option>
+                    <option value="" disabled>Risk Factor</option>
                     <option value="✰✰✰✰✰">✰✰✰✰✰</option>
                     <option value="★✰✰✰✰">★✰✰✰✰</option>
                     <option value="★★✰✰✰">★★✰✰✰</option>
@@ -96,7 +96,7 @@ function MonsterForm() {
                 value={formData.rarity}
                 onChange={handleChange}
                 >
-                    <option value="" disabled selected>Rarity</option>
+                    <option value="" disabled>Rarity</option>
                     <option value="Only one">Only One</option>
                     <option value="Very rare">Very Rare</option>
                     <option value="Rare">Rare</option>
