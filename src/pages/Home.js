@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router-dom";
+import Header from "../components/Header";
 import MonsterCard from "../components/MonsterCard";
 import MonsterForm from "../components/MonsterForm";
 import { useEffect } from "react";
@@ -13,9 +14,10 @@ function Home() {
 
     return (
         <>
+          <Header />
           <MonsterForm />
           <hr/>
-          <h2>Confirmed Monster Sightings</h2>
+          <h2 className="header">Confirmed Monster Sightings:</h2>
           {monsters.map(monster => (
             <MonsterCard 
             key={monster.id}

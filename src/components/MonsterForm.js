@@ -51,7 +51,7 @@ function MonsterForm() {
     };
 
     return (
-        <div>
+        <div className="header">
             <h3>Add New Monster Sighting!</h3>
             <form
             onSubmit={handleSubmit}>

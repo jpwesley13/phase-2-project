@@ -29,3 +29,14 @@ code {
   height: 12rem;
   width: auto;
 }
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
