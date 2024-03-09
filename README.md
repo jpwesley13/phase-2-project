@@ -1,14 +1,14 @@
 # Monster Match
 
-Monster Match is an application which displays a list of monsters that have been sighted and added to the app by users. Inhrently the app allows the user to complete a form to add additional monster sightings to the app. The Monster Match app also allows users to explore other pages to see monsters by their origin series, as well as by location, as a means of seeking the monsters out themselves.
+Monster Match is an application which displays a list of monsters that have been sighted and added to the app by users. Inherently the app allows the user to complete a form to add additional monster sightings to the app. The Monster Match app also allows users to explore other pages to see monsters by their origin series, as well as by location, as a means of seeking the monsters out themselves.
 
 ## Initialization
 
-When Monster Match is loaded, the user is greeted with the home page, which explains the app's purpose to the user, in addition to providng them a form to add new monster sightings as well as displaying cards for existing monster sightings.
+When Monster Match is loaded, the user is greeted with the home page, which explains the app's purpose, in addition to providing them with a form to add new monster sightings. Below the form, the home page displays cards for existing monster sightings.
 
 ## Features
 
-* User may freely explore home page and view a myriad of monster sightings from across the globe and beyond.
+* User may freely explore the home page and view a myriad of monster sightings from across the globe and beyond.
 * By utilizing the form on the front page, the user can add their own monster sightings to the app.
 * The user can click on an observations link for any displayed monster to obtain additional information.
 * In addition to the Home tab, tabs for Series and Travel allow the user to filter down monsters by various criteria.
