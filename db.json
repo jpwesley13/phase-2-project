@@ -62,6 +62,15 @@
       "rarity": "Uncommon",
       "image": "https://wikimon.net/images/4/42/Tanemon_DA_2020.png",
       "id": 7
+    },
+    {
+      "name": "Anansi",
+      "series": "Akan Folklore",
+      "origin": "Africa",
+      "risk": "★★✰✰✰",
+      "rarity": "Rare",
+      "image": "https://www.gateway-africa.com/stories/images/anansi-spider.jpg",
+      "id": 8
     }
   ]
 }

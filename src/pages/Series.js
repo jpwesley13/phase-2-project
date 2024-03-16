@@ -50,6 +50,3 @@ function Series() {
 };
 
 export default Series;
-
-//Can accomplish all desired tasks with just storing monsters state.
-//Only fetch and set monster data, and then use that monster state in both series and travel to create my dropdowns.
