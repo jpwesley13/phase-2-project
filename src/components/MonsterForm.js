@@ -27,6 +27,14 @@ function MonsterForm() {
 
     function handleSubmit(e){
         e.preventDefault()
+        setFormData({
+            name: "",
+            series: "",
+            origin: "",
+            risk: "",
+            rarity: "",
+            image: "",
+        })
 
         const monsterData = {
             name: formData.name,
@@ -46,7 +54,6 @@ function MonsterForm() {
         .then(res => res.json())
         .then(data => {
             onAddMonster(data);
-            setFormData({})
         });
     };
 
