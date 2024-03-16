@@ -53,6 +53,15 @@
       "rarity": "Very rare",
       "image": "https://www.getalternative.com/wp-content/uploads/2015/10/img-7.jpg",
       "id": 6
+    },
+    {
+      "name": "Tanemon",
+      "series": "Digimon",
+      "origin": "Cyberspace",
+      "risk": "★✰✰✰✰",
+      "rarity": "Uncommon",
+      "image": "https://wikimon.net/images/4/42/Tanemon_DA_2020.png",
+      "id": 7
     }
   ]
 }

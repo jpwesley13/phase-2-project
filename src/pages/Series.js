@@ -8,8 +8,9 @@ function Series() {
       document.title = "Series"
     }, [])
 
-    const {series, monsters} = useOutletContext();
+    const {monsters} = useOutletContext();
     const [filteredSeries, setFilteredSeries] = useState("");
+    const series = Array.from(new Set(monsters.map(monster => monster.series)))
 
     const seriesList = filteredSeries ? (
         series
@@ -50,3 +51,5 @@ function Series() {
 
 export default Series;
 
+//Can accomplish all desired tasks with just storing monsters state.
+//Only fetch and set monster data, and then use that monster state in both series and travel to create my dropdowns.

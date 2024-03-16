@@ -5,8 +5,7 @@ import { Outlet } from "react-router-dom";
 function App() {
 
     const [monsters, setMonsters] = useState([]);
-    const [series, setSeries] = useState([]);
-    const [origins, setOrigins] = useState([]);
+
 
 
     useEffect(() => {
@@ -14,10 +13,6 @@ function App() {
         .then(res => res.json())
         .then(data => {
             setMonsters(data);
-            const uniqueSeries = Array.from(new Set(data.map(monster => monster.series)));
-            setSeries(uniqueSeries);
-            const uniqueOrigins = Array.from(new Set(data.map(monster => monster.origin)));
-            setOrigins(uniqueOrigins);
         })
         .catch(error => console.error(error));
     }, []);
@@ -27,7 +22,7 @@ function App() {
         <header>
             <NavBar />
         </header>
-        <Outlet context={{monsters, setMonsters, series, origins}} />
+        <Outlet context={{monsters, setMonsters}} />
         </>
     );
 };

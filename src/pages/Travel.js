@@ -8,7 +8,8 @@ function Travel() {
       document.title = "Travel"
     }, [])
 
-    const {origins, monsters} = useOutletContext();
+    const {monsters} = useOutletContext();
+    const origins = Array.from(new Set(monsters.map(monster => monster.origin)))
     const [filteredOrigins, setFilteredOrigins] = useState("");
 
     const originsList = filteredOrigins ? (
