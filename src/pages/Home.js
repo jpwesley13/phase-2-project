@@ -7,7 +7,6 @@ import { useEffect } from "react";
 function Home() {
 
     const {monsters} = useOutletContext();
-    
 
     const displayedMonsters = monsters.map(monster => (
       <MonsterCard 

@@ -8,7 +8,7 @@ function Monster() {
     const monster = monsters.find(monster => monster.id === parseInt(params.id));
 
     useEffect(() => {
-      document.title = `${monster.name}`
+      document.title = "Sighted Monster"
     }, [])
 
       if(!monster){
