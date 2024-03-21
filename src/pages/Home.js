@@ -7,6 +7,15 @@ import { useEffect } from "react";
 function Home() {
 
     const {monsters} = useOutletContext();
+    
+
+    const displayedMonsters = monsters.map(monster => (
+      <MonsterCard 
+      key={monster.id}
+      monster={monster}
+      id={monster.id}
+      />
+    ))
 
     useEffect(() => {
       document.title = "Monster Match"
@@ -18,13 +27,7 @@ function Home() {
           <MonsterForm />
           <hr/>
           <h2 className="header">Confirmed Monster Sightings:</h2>
-          {monsters.map(monster => (
-            <MonsterCard 
-            key={monster.id}
-            monster={monster}
-            id={monster.id}
-            />
-          ))}
+          {displayedMonsters}
         </>
     )
 };

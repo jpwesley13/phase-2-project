@@ -6,7 +6,9 @@ function App() {
 
     const [monsters, setMonsters] = useState([]);
 
-
+    function onAddMonster(newMonster){
+        return setMonsters([...monsters, newMonster])
+    };
 
     useEffect(() => {
         fetch(`http://127.0.0.1:3000/monster`)
@@ -22,7 +24,7 @@ function App() {
         <header>
             <NavBar />
         </header>
-        <Outlet context={{monsters, setMonsters}} />
+        <Outlet context={{monsters, onAddMonster}} />
         </>
     );
 };

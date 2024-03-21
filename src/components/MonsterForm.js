@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useOutletContext } from "react-router-dom";
 
 function MonsterForm() {
-    const {monsters, setMonsters} = useOutletContext();
+    const {onAddMonster} = useOutletContext();
     const [formData, setFormData] = useState({
         name: "",
         series: "",
@@ -12,8 +12,8 @@ function MonsterForm() {
         image: "",
     });
 
-    function onAddMonster(newMonster){
-        return setMonsters([...monsters, newMonster])
+    function handleAddMonster(newMonster){
+        onAddMonster(newMonster)
     };
 
     function handleChange(e){
@@ -53,7 +53,7 @@ function MonsterForm() {
         })
         .then(res => res.json())
         .then(data => {
-            onAddMonster(data);
+            handleAddMonster(data);
         });
     };
 

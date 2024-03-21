@@ -71,6 +71,15 @@
       "rarity": "Rare",
       "image": "https://www.gateway-africa.com/stories/images/anansi-spider.jpg",
       "id": 8
+    },
+    {
+      "name": "Test",
+      "series": "Testeria",
+      "origin": "Cyberspace",
+      "risk": "✰✰✰✰✰",
+      "rarity": "Very Common",
+      "image": "None",
+      "id": 9
     }
   ]
 }
