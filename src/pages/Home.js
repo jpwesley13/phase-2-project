@@ -12,7 +12,6 @@ function Home() {
       <MonsterCard 
       key={monster.id}
       monster={monster}
-      id={monster.id}
       />
     ))
 

@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 
-function MonsterCard({monster, id}) {
+function MonsterCard({monster}) {
+
+    const {name, image, id} = monster
+
     return (
         <div className="card">
-            <h2>{monster.name}</h2>
+            <h2>{name}</h2>
             <img 
-              src={monster.image}
-              alt={monster.name}
+              src={image}
+              alt={name}
               className="monster-card"  
             />
             <Link to={`/monster/${id}`}>Observations</Link>
