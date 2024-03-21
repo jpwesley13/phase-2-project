@@ -21,13 +21,18 @@ function Series() {
             );
             return (
               <FilterCard
-                key={production}
                 unique={production}
                 monsters={filteredMonsters}
               />
             );
           })
       ) : null;
+
+      const seriesOptions = series.map((production) => (
+        <option key={production} value={production}>
+        {production}
+        </option>
+        ))
 
     return (
         <>
@@ -37,13 +42,9 @@ function Series() {
           <br/>
         <select value={filteredSeries} onChange={(e) => setFilteredSeries(e.target.value)}>
         <option disabled value="">Choose Series</option>
-        {series.map((production) => (
-        <option key={production} value={production}>
-        {production}
-        </option>
-        ))}
+        {seriesOptions}
         </select>
-            {seriesList}
+        {seriesList}
         </main>
         </>
     );

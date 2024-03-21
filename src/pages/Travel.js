@@ -21,13 +21,18 @@ function Travel() {
             );
             return (
               <FilterCard
-                key={origin}
                 unique={origin}
                 monsters={filteredMonsters}
               />
             );
           })
       ) : null;
+
+      const originOptions = origins.map((origin) => (
+        <option key={origin} value={origin}>
+      {origin}
+        </option>
+      ))
 
     return (
         <>
@@ -37,13 +42,9 @@ function Travel() {
           <br/>
           <select value={filteredOrigins} onChange={(e) => setFilteredOrigins(e.target.value)}>
           <option disabled value="">Choose Destination</option>
-        {origins.map((origin) => (
-          <option key={origin} value={origin}>
-        {origin}
-          </option>
-        ))}
+          {originOptions}
           </select>
-            {originsList}
+          {originsList}
         </main>
         </>
     );
